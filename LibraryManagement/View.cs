@@ -51,5 +51,21 @@ namespace LibraryManagement
             connection = new SqlConnection("Server =  DESKTOP-RO3JCC6; Database = LibraryManagement; Integrated Security = true;");
             lbUser1.Text = "User: " + username;
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Do you want exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnClick_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FindBook findBook = new FindBook();
+            findBook.ShowDialog();
+            this.Dispose();
+        }
     }
 }

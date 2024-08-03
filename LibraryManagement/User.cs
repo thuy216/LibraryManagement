@@ -23,7 +23,6 @@ namespace LibraryManagement
         private void User_Load(object sender, EventArgs e)
         {
             connection.Open();
-         
             FillData();
         }
         public void FillData()

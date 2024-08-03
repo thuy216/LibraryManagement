@@ -16,3 +16,4 @@ D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManag
 D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Borrowed_book_information.resources
 D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.User.resources
 D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.DamagedBook.resources
+D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.FindBook.resources

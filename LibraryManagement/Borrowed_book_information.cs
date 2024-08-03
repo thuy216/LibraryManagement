@@ -23,7 +23,6 @@ namespace LibraryManagement
         private void Borrowed_book_information_Load(object sender, EventArgs e)
         {
             connection.Open();
-            MessageBox.Show(this, "Succeccful Connection!", "Result", MessageBoxButtons.OK, MessageBoxIcon.None);
             FillData();
         }
         public void FillData()

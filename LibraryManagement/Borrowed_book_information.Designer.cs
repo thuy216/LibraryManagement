@@ -79,17 +79,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(461, 9);
+            this.label1.Location = new System.Drawing.Point(484, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(578, 54);
+            this.label1.Size = new System.Drawing.Size(560, 54);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Book Lending Information";
+            this.label1.Text = "Book Borrow Information";
             // 
             // Borrowed_book_information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1518, 842);
+            this.ClientSize = new System.Drawing.Size(1643, 989);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbAdmin);
             this.Controls.Add(this.btnExit);

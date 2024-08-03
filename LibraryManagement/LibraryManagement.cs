@@ -14,6 +14,7 @@ namespace LibraryManagement
     public partial class LibraryManagement : Form
     {
         SqlConnection connection;
+        private string connectionString = "Server =  DESKTOP-RO3JCC6; Database = LibraryManagement; Integrated Security = true;";
         public LibraryManagement()
         {
             InitializeComponent();
@@ -93,11 +94,38 @@ namespace LibraryManagement
 
 
             string quantity = txbQuantity.Text;
+            bool hasError = false; // Biến để theo dõi xem có lỗi hay không
 
-            if (quantity.Equals(""))
+            // Kiểm tra xem trường nhập liệu có rỗng không
+            if (string.IsNullOrWhiteSpace(quantity))
             {
                 error = error + 1;
                 lbQuantityError.Text = "Quantity can't be blank";
+                hasError = true;
+            }
+            // Kiểm tra xem giá trị nhập vào có phải là số và lớn hơn 0 không nếu trường nhập liệu không rỗng
+            else if (decimal.TryParse(quantity, out decimal number))
+            {
+                if (number > 0)
+                {
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Quantity must be greater than 0.");
+                    hasError = true;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid input. Please enter a valid number.");
+                hasError = true;
+            }
+
+            // Nếu có lỗi, thực hiện các hành động khác nếu cần
+            if (hasError)
+            {
+                // Xử lý lỗi hoặc yêu cầu người dùng nhập lại
             }
             else
             {
@@ -229,6 +257,151 @@ namespace LibraryManagement
             User user = new User();
             user.ShowDialog();
             this.Dispose();
+        }
+
+        private void btnGetMostBorowCategory_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = @"
+                    SELECT TOP 1
+                        c.CategoryName,
+                        COUNT(b.BookID) AS NumberOfBooksBorrowed
+                    FROM
+                        Borrow br
+                    JOIN
+                        Book b ON br.BookID = b.BookID
+                    JOIN
+                        Category c ON b.CategoryID = c.CategoryID
+                    GROUP BY
+                        c.CategoryName
+                    ORDER BY
+                        NumberOfBooksBorrowed DESC;
+                ";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    if (dataTable.Rows.Count > 0)
+                    {
+                        DataRow row = dataTable.Rows[0];
+                        string categoryName = row["CategoryName"].ToString();
+                        string numberOfBooksBorrowed = row["NumberOfBooksBorrowed"].ToString();
+
+                        lbResutltGMBC.Text = $"Category: {categoryName} - Number of Books Borrowed: {numberOfBooksBorrowed}";
+                    }
+                    else
+                    {
+                        lbResutltGMBC.Text = "No data available.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+        }
+
+        private void btnbtnGetTopReader_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Truy vấn SQL để lấy thông tin người đọc mượn nhiều sách nhất
+                string query = @"
+                    SELECT TOP 1
+                        r.ReaderName,
+                        COUNT(b.BookID) AS NumberOfBooksBorrowed
+                    FROM
+                        Borrow br
+                    JOIN
+                        Readers r ON br.ReaderID = r.ReaderID
+                    JOIN
+                        Book b ON br.BookID = b.BookID
+                    GROUP BY
+                        r.ReaderName
+                    ORDER BY
+                        NumberOfBooksBorrowed DESC;
+                ";
+
+                // Kết nối cơ sở dữ liệu và thực hiện truy vấn
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    // Kiểm tra dữ liệu và hiển thị kết quả
+                    if (dataTable.Rows.Count > 0)
+                    {
+                        DataRow row = dataTable.Rows[0];
+                        string readerName = row["ReaderName"].ToString();
+                        string numberOfBooksBorrowed = row["NumberOfBooksBorrowed"].ToString();
+
+                        lbGTR.Text = $"Top Reader: {readerName} - Number of Books Borrowed: {numberOfBooksBorrowed}";
+                    }
+                    else
+                    {
+                        lbGTR.Text = "No data available.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+        }
+
+        private void btnGetTopMonth_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Truy vấn SQL để lấy tháng có nhiều người mượn sách nhất
+                string query = @"
+                    SELECT TOP 1
+                        DATEPART(YEAR, BorrowDate) AS Year,
+                        DATEPART(MONTH, BorrowDate) AS Month,
+                        COUNT(DISTINCT ReaderID) AS NumberOfReaders
+                    FROM
+                        Borrow
+                    GROUP BY
+                        DATEPART(YEAR, BorrowDate),
+                        DATEPART(MONTH, BorrowDate)
+                    ORDER BY
+                        NumberOfReaders DESC;
+                ";
+
+                // Kết nối cơ sở dữ liệu và thực hiện truy vấn
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    // Kiểm tra dữ liệu và hiển thị kết quả
+                    if (dataTable.Rows.Count > 0)
+                    {
+                        DataRow row = dataTable.Rows[0];
+                        string year = row["Year"].ToString();
+                        string month = row["Month"].ToString();
+                        string numberOfReaders = row["NumberOfReaders"].ToString();
+
+                        lbResultGTM.Text = $"Month: {month}/{year} - Number of Readers: {numberOfReaders}";
+                    }
+                    else
+                    {
+                        lbResultGTM.Text = "No data available.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
         }
     }
 }

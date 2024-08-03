@@ -52,13 +52,14 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.btnExit3 = new System.Windows.Forms.Button();
             this.dgvDamagedBook = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDamagedBook)).BeginInit();
             this.SuspendLayout();
             // 
             // lbDateError
             // 
             this.lbDateError.AutoSize = true;
-            this.lbDateError.Location = new System.Drawing.Point(1038, 770);
+            this.lbDateError.Location = new System.Drawing.Point(1054, 850);
             this.lbDateError.Name = "lbDateError";
             this.lbDateError.Size = new System.Drawing.Size(0, 32);
             this.lbDateError.TabIndex = 58;
@@ -66,7 +67,7 @@
             // lbDescriptionError
             // 
             this.lbDescriptionError.AutoSize = true;
-            this.lbDescriptionError.Location = new System.Drawing.Point(1038, 840);
+            this.lbDescriptionError.Location = new System.Drawing.Point(1054, 920);
             this.lbDescriptionError.Name = "lbDescriptionError";
             this.lbDescriptionError.Size = new System.Drawing.Size(0, 32);
             this.lbDescriptionError.TabIndex = 57;
@@ -74,7 +75,7 @@
             // lbAuthorError
             // 
             this.lbAuthorError.AutoSize = true;
-            this.lbAuthorError.Location = new System.Drawing.Point(118, 919);
+            this.lbAuthorError.Location = new System.Drawing.Point(134, 999);
             this.lbAuthorError.Name = "lbAuthorError";
             this.lbAuthorError.Size = new System.Drawing.Size(0, 32);
             this.lbAuthorError.TabIndex = 56;
@@ -82,7 +83,7 @@
             // lbTitleError
             // 
             this.lbTitleError.AutoSize = true;
-            this.lbTitleError.Location = new System.Drawing.Point(118, 842);
+            this.lbTitleError.Location = new System.Drawing.Point(134, 922);
             this.lbTitleError.Name = "lbTitleError";
             this.lbTitleError.Size = new System.Drawing.Size(0, 32);
             this.lbTitleError.TabIndex = 55;
@@ -90,7 +91,7 @@
             // lbBookIDError
             // 
             this.lbBookIDError.AutoSize = true;
-            this.lbBookIDError.Location = new System.Drawing.Point(124, 775);
+            this.lbBookIDError.Location = new System.Drawing.Point(140, 855);
             this.lbBookIDError.Name = "lbBookIDError";
             this.lbBookIDError.Size = new System.Drawing.Size(0, 32);
             this.lbBookIDError.TabIndex = 54;
@@ -137,7 +138,7 @@
             // 
             // txbDescription
             // 
-            this.txbDescription.Location = new System.Drawing.Point(1347, 803);
+            this.txbDescription.Location = new System.Drawing.Point(1363, 883);
             this.txbDescription.Multiline = true;
             this.txbDescription.Name = "txbDescription";
             this.txbDescription.Size = new System.Drawing.Size(498, 39);
@@ -145,7 +146,7 @@
             // 
             // txbDate
             // 
-            this.txbDate.Location = new System.Drawing.Point(1347, 731);
+            this.txbDate.Location = new System.Drawing.Point(1363, 811);
             this.txbDate.Multiline = true;
             this.txbDate.Name = "txbDate";
             this.txbDate.Size = new System.Drawing.Size(498, 39);
@@ -153,7 +154,7 @@
             // 
             // txbAuthor
             // 
-            this.txbAuthor.Location = new System.Drawing.Point(410, 867);
+            this.txbAuthor.Location = new System.Drawing.Point(426, 947);
             this.txbAuthor.Multiline = true;
             this.txbAuthor.Name = "txbAuthor";
             this.txbAuthor.Size = new System.Drawing.Size(359, 39);
@@ -161,7 +162,7 @@
             // 
             // txbTitle
             // 
-            this.txbTitle.Location = new System.Drawing.Point(410, 800);
+            this.txbTitle.Location = new System.Drawing.Point(426, 880);
             this.txbTitle.Multiline = true;
             this.txbTitle.Name = "txbTitle";
             this.txbTitle.Size = new System.Drawing.Size(395, 39);
@@ -169,7 +170,7 @@
             // 
             // txbBookID
             // 
-            this.txbBookID.Location = new System.Drawing.Point(410, 738);
+            this.txbBookID.Location = new System.Drawing.Point(426, 818);
             this.txbBookID.Multiline = true;
             this.txbBookID.Name = "txbBookID";
             this.txbBookID.Size = new System.Drawing.Size(95, 39);
@@ -178,7 +179,7 @@
             // cbCategory
             // 
             this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(1347, 865);
+            this.cbCategory.Location = new System.Drawing.Point(1363, 945);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(364, 39);
             this.cbCategory.TabIndex = 42;
@@ -186,7 +187,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1038, 874);
+            this.label8.Location = new System.Drawing.Point(1054, 954);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(129, 32);
             this.label8.TabIndex = 41;
@@ -195,7 +196,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1038, 803);
+            this.label7.Location = new System.Drawing.Point(1054, 883);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(280, 32);
             this.label7.TabIndex = 40;
@@ -204,7 +205,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1038, 738);
+            this.label6.Location = new System.Drawing.Point(1054, 818);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(181, 32);
             this.label6.TabIndex = 39;
@@ -213,7 +214,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(118, 874);
+            this.label5.Location = new System.Drawing.Point(134, 954);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 32);
             this.label5.TabIndex = 38;
@@ -222,7 +223,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(118, 807);
+            this.label4.Location = new System.Drawing.Point(134, 887);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 32);
             this.label4.TabIndex = 37;
@@ -231,7 +232,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(118, 738);
+            this.label3.Location = new System.Drawing.Point(134, 818);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 32);
             this.label3.TabIndex = 36;
@@ -260,7 +261,7 @@
             // dgvDamagedBook
             // 
             this.dgvDamagedBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDamagedBook.Location = new System.Drawing.Point(39, 34);
+            this.dgvDamagedBook.Location = new System.Drawing.Point(28, 82);
             this.dgvDamagedBook.Name = "dgvDamagedBook";
             this.dgvDamagedBook.RowHeadersWidth = 102;
             this.dgvDamagedBook.RowTemplate.Height = 40;
@@ -268,11 +269,22 @@
             this.dgvDamagedBook.TabIndex = 32;
             this.dgvDamagedBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDamagedBook_CellClick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(752, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(615, 54);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "Damaged Book Information";
+            // 
             // DamagedBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2109, 1311);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbDateError);
             this.Controls.Add(this.lbDescriptionError);
             this.Controls.Add(this.lbAuthorError);
@@ -332,5 +344,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnExit3;
         private System.Windows.Forms.DataGridView dgvDamagedBook;
+        private System.Windows.Forms.Label label1;
     }
 }
