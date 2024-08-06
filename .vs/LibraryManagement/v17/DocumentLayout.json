@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\Visual Studio 2022\\LibraryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|d:\\visual studio 2022\\librarymanagement\\librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|d:\\visual studio 2022\\librarymanagement\\librarymanagement\\damagedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\damagedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|d:\\visual studio 2022\\librarymanagement\\librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|d:\\visual studio 2022\\librarymanagement\\librarymanagement\\damagedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|D:\\Visual Studio 2022\\LibraryManagement\\librarymanagement\\damagedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\damagedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|d:\\visual studio 2022\\librarymanagement\\librarymanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|D:\\Visual Studio 2022\\LibraryManagement\\librarymanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|d:\\visual studio 2022\\librarymanagement\\librarymanagement\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|D:\\Visual Studio 2022\\LibraryManagement\\librarymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|D:\\Visual Studio 2022\\LibraryManagement\\librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|D:\\Visual Studio 2022\\LibraryManagement\\librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\librarymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|D:\\Visual Studio 2022\\LibraryManagement\\librarymanagement\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FEAE9BA-CBAB-4F6D-8E42-CC7C7BF5A9D6}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 273,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,56 +46,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.Designer.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\User.Designer.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\User.Designer.cs",
-              "ToolTip": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\User.Designer.cs",
-              "RelativeToolTip": "LibraryManagement\\User.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "DocumentIndex": 0,
+              "Title": "DamagedBook.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\DamagedBook.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\DamagedBook.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\DamagedBook.cs",
+              "RelativeToolTip": "LibraryManagement\\DamagedBook.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAAALwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:22:28.027Z",
+              "WhenOpened": "2024-08-06T02:14:12.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "User.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\User.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\User.cs",
               "ToolTip": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\User.cs [Design]",
               "RelativeToolTip": "LibraryManagement\\User.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T11:21:08.284Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-03T11:21:08.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DamagedBook.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\DamagedBook.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\DamagedBook.cs",
               "ToolTip": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\DamagedBook.cs [Design]",
               "RelativeToolTip": "LibraryManagement\\DamagedBook.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:04:13.657Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-03T10:04:13.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "LibraryManagement.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\LibraryManagement.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\LibraryManagement.cs",
               "ToolTip": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\LibraryManagement.cs [Design]",
               "RelativeToolTip": "LibraryManagement\\LibraryManagement.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T09:38:28.58Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-03T09:38:28.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LibraryManagement.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\LibraryManagement.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\LibraryManagement.cs",
@@ -99,12 +100,11 @@
               "RelativeToolTip": "LibraryManagement\\LibraryManagement.cs",
               "ViewState": "AQIAAIUBAAAAAAAAAAAAwBQAAACDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T09:38:30.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T09:38:30.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\Program.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Program.cs",
@@ -112,8 +112,19 @@
               "RelativeToolTip": "LibraryManagement\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:22:24.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:22:24.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\User.Designer.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\User.Designer.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\LibraryManagement\\LibraryManagement\\User.Designer.cs",
+              "RelativeToolTip": "LibraryManagement\\User.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T11:22:28.027Z"
             }
           ]
         }

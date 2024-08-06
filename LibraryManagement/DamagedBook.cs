@@ -106,10 +106,31 @@ namespace LibraryManagement
             if (string.IsNullOrEmpty(date))
             {
                 error++;
-                lbDateError.Text = "DateDamaged can't be blank";
+                lbDateError.Text = "Ngày hỏng không được để trống";
             }
             else
-                lbDateError.Text = "";
+            {
+
+                DateTime parsedDate;
+                if (DateTime.TryParse(date, out parsedDate))
+                {
+
+                    if (parsedDate > DateTime.Now)
+                    {
+                        error++;
+                        lbDateError.Text = "The failure date cannot exceed the current date";
+                    }
+                    else
+                    {
+                        lbDateError.Text = "";
+                    }
+                }
+                else
+                {
+                    error++;
+                    lbDateError.Text = "Invalid date format";
+                }
+            }
 
             if (error > 0)
             {
