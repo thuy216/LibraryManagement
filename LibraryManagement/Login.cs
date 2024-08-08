@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,7 +25,9 @@ namespace LibraryManagement
         {
             string username = txbUsername.Text;
             string password = txbPassword.Text;
-            string query = "select * from account where username = @username and u_password = @password";
+            string hashedPassword = ComputeMD5Hash(password);
+
+            string query = "SELECT * FROM account WHERE username = @username AND u_password = @password";
             connection.Open();
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@username", SqlDbType.VarChar);
@@ -69,6 +72,29 @@ namespace LibraryManagement
                 Application.Exit();
             }
         }
-    }
 
+        private string ComputeMD5Hash(string input)
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] inputBytes = Encoding.UTF8.GetBytes(input);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("x2"));
+                }
+                return sb.ToString();
+            }
+        }
+        // Hiển thị kết quả băm trong MessageBox
+        //private void btnTestMD5_Click_1(object sender, EventArgs e)
+        //{
+        //    string password = txbPassword.Text;
+        //    string hashedPassword = ComputeMD5Hash(password);
+
+        //    MessageBox.Show("MD5 Hash: " + hashedPassword, "MD5 Hash", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //}
+    }
 }

@@ -309,7 +309,6 @@ namespace LibraryManagement
         {
             try
             {
-                // Truy vấn SQL để lấy thông tin người đọc mượn nhiều sách nhất
                 string query = @"
                     SELECT TOP 1
                         r.ReaderName,
@@ -326,14 +325,12 @@ namespace LibraryManagement
                         NumberOfBooksBorrowed DESC;
                 ";
 
-                // Kết nối cơ sở dữ liệu và thực hiện truy vấn
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
 
-                    // Kiểm tra dữ liệu và hiển thị kết quả
                     if (dataTable.Rows.Count > 0)
                     {
                         DataRow row = dataTable.Rows[0];
@@ -350,7 +347,6 @@ namespace LibraryManagement
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
@@ -359,7 +355,6 @@ namespace LibraryManagement
         {
             try
             {
-                // Truy vấn SQL để lấy tháng có nhiều người mượn sách nhất
                 string query = @"
                     SELECT TOP 1
                         DATEPART(YEAR, BorrowDate) AS Year,
@@ -374,14 +369,12 @@ namespace LibraryManagement
                         NumberOfReaders DESC;
                 ";
 
-                // Kết nối cơ sở dữ liệu và thực hiện truy vấn
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
 
-                    // Kiểm tra dữ liệu và hiển thị kết quả
                     if (dataTable.Rows.Count > 0)
                     {
                         DataRow row = dataTable.Rows[0];
@@ -399,7 +392,6 @@ namespace LibraryManagement
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
