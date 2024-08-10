@@ -28,41 +28,59 @@ namespace LibraryManagement
             string hashedPassword = ComputeMD5Hash(password);
 
             string query = "SELECT * FROM account WHERE username = @username AND u_password = @password";
-            connection.Open();
-            SqlCommand cmd = new SqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@username", SqlDbType.VarChar);
-            cmd.Parameters["@username"].Value = username;
-            cmd.Parameters.AddWithValue("@password", SqlDbType.VarChar);
-            cmd.Parameters["@password"].Value = password;
-            SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
+            try
             {
-                string role = reader["u_role"].ToString();
-                if (role.Equals("admin"))
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", hashedPassword);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
                 {
-                    MessageBox.Show(this, "Login Successful", "Result", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    this.Hide();
-                    LibraryManagement p = new LibraryManagement();
-                    p.ShowDialog();
-                    this.Dispose();
-                }
-                else if (role.Equals("user"))
-                {
-                    MessageBox.Show(this, "Login Successful! ", "Result", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    this.Hide();
-                    View v = new View();
-                    v.ShowDialog();
-                    this.Dispose();
+                    string role = reader["u_role"].ToString();
+                    switch (role)
+                    {
+                        case "admin":
+                            MessageBox.Show(this, "Login Successful", "Result", MessageBoxButtons.OK, MessageBoxIcon.None);
+                            this.Hide();
+                            LibraryManagement p = new LibraryManagement();
+                            p.ShowDialog();
+                            this.Close();
+                            break;
+
+                        case "staff":
+                            MessageBox.Show(this, "Login Successful!", "Result", MessageBoxButtons.OK, MessageBoxIcon.None);
+                            MessageBox.Show("Staff cannot access any forms.");
+                            break;
+
+                        case "user":
+                            MessageBox.Show(this, "Login Successful!", "Result", MessageBoxButtons.OK, MessageBoxIcon.None);
+                            this.Hide();
+                            View v = new View();
+                            v.ShowDialog();
+                            this.Close();
+                            break;
+
+                        default:
+                            lbError.Text = "Invalid role";
+                            break;
+                    }
                 }
                 else
-                    lbError.Text = "You are not allowed access";
-
+                {
+                    lbError.Text = "Wrong username or password";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                lbError.Text = "Wrong username or password";
+                MessageBox.Show("Error: " + ex.Message);
             }
-            connection.Close();
+            finally
+            {
+                connection.Close();
+            }
+
         }
 
         private void btnExit1_Click(object sender, EventArgs e)
@@ -75,7 +93,7 @@ namespace LibraryManagement
 
         private string ComputeMD5Hash(string input)
         {
-            using (MD5 md5 = MD5.Create())
+            using (var md5 = MD5.Create())
             {
                 byte[] inputBytes = Encoding.UTF8.GetBytes(input);
                 byte[] hashBytes = md5.ComputeHash(inputBytes);
@@ -88,13 +106,13 @@ namespace LibraryManagement
                 return sb.ToString();
             }
         }
-        // Hiển thị kết quả băm trong MessageBox
-        //private void btnTestMD5_Click_1(object sender, EventArgs e)
-        //{
-        //    string password = txbPassword.Text;
-        //    string hashedPassword = ComputeMD5Hash(password);
 
-        //    MessageBox.Show("MD5 Hash: " + hashedPassword, "MD5 Hash", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //}
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register_new_account r = new Register_new_account();
+            r.ShowDialog();
+            this.Show();
+        }
     }
 }

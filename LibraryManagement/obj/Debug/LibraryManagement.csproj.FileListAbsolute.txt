@@ -17,3 +17,4 @@ D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManag
 D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.User.resources
 D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.DamagedBook.resources
 D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.FindBook.resources
+D:\Visual Studio 2022\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Register_new_account.resources

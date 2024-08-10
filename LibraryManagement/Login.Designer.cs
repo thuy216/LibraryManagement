@@ -36,13 +36,14 @@
             this.btnExit1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lbError = new System.Windows.Forms.Label();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(366, 450);
+            this.label1.Location = new System.Drawing.Point(130, 347);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 54);
             this.label1.TabIndex = 2;
@@ -52,7 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Script MT Bold", 26.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(643, 143);
+            this.label2.Location = new System.Drawing.Point(614, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(243, 105);
             this.label2.TabIndex = 3;
@@ -62,7 +63,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(366, 324);
+            this.label3.Location = new System.Drawing.Point(130, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(248, 54);
             this.label3.TabIndex = 4;
@@ -70,25 +71,25 @@
             // 
             // txbUsername
             // 
-            this.txbUsername.Location = new System.Drawing.Point(670, 324);
+            this.txbUsername.Location = new System.Drawing.Point(416, 221);
             this.txbUsername.Multiline = true;
             this.txbUsername.Name = "txbUsername";
-            this.txbUsername.Size = new System.Drawing.Size(399, 54);
+            this.txbUsername.Size = new System.Drawing.Size(653, 80);
             this.txbUsername.TabIndex = 5;
             // 
             // txbPassword
             // 
-            this.txbPassword.Location = new System.Drawing.Point(670, 450);
+            this.txbPassword.Location = new System.Drawing.Point(416, 328);
             this.txbPassword.Multiline = true;
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.PasswordChar = '?';
-            this.txbPassword.Size = new System.Drawing.Size(399, 54);
+            this.txbPassword.Size = new System.Drawing.Size(653, 73);
             this.txbPassword.TabIndex = 6;
             // 
             // btnExit1
             // 
             this.btnExit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit1.Location = new System.Drawing.Point(465, 587);
+            this.btnExit1.Location = new System.Drawing.Point(1087, 743);
             this.btnExit1.Name = "btnExit1";
             this.btnExit1.Size = new System.Drawing.Size(216, 84);
             this.btnExit1.TabIndex = 7;
@@ -99,9 +100,9 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(844, 587);
+            this.btnLogin.Location = new System.Drawing.Point(416, 460);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(216, 84);
+            this.btnLogin.Size = new System.Drawing.Size(653, 84);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -110,16 +111,28 @@
             // lbError
             // 
             this.lbError.AutoSize = true;
-            this.lbError.Location = new System.Drawing.Point(681, 527);
+            this.lbError.Location = new System.Drawing.Point(421, 404);
             this.lbError.Name = "lbError";
             this.lbError.Size = new System.Drawing.Size(0, 32);
             this.lbError.TabIndex = 9;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(416, 580);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(653, 84);
+            this.btnRegister.TabIndex = 10;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1569, 1008);
+            this.ClientSize = new System.Drawing.Size(1421, 1008);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lbError);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnExit1);
@@ -145,5 +158,6 @@
         private System.Windows.Forms.Button btnExit1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lbError;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

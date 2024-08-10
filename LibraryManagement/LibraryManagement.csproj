@@ -67,6 +67,12 @@
     <Compile Include="FindBook.Designer.cs">
       <DependentUpon>FindBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Register new account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register new account.Designer.cs">
+      <DependentUpon>Register new account.cs</DependentUpon>
+    </Compile>
     <Compile Include="View.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FindBook.resx">
       <DependentUpon>FindBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register new account.resx">
+      <DependentUpon>Register new account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View.resx">
       <DependentUpon>View.cs</DependentUpon>
